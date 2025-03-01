@@ -44,6 +44,8 @@ class productcard extends StatelessWidget {
               Text(
                 product.productName.toString(),
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                overflow: TextOverflow.ellipsis,
+                maxLines: 3,
               ),
               Text("Qty: ${product.qty} || Price: ${product.unitPrice}"),
             ],
